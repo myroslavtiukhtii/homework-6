@@ -22,17 +22,20 @@ main {
     display: inline-block;
     font-family: 'Lucida Sans Unicode';
     font-size: 18px;
-    line-height: 15px;
     color: #FFFFFF;
     text-align: center;
     padding-top: 15px;
+    margin-bottom: 35px;
 }
 
 .main-block {
     font-size: 0;
     position: relative;
     width: auto;
-    margin-top: 35px;
+}
+
+.city-list {
+    margin-bottom: 25px;
 }
 
 main .main-block .city-list li {
@@ -53,6 +56,10 @@ main .main-block .city-list li {
 
 main .main-block .city-list li:hover {
     opacity: 1.0;
+}
+
+.celcius span {
+    margin-right: 5px;
 }
 
 i.wi {
@@ -162,7 +169,6 @@ i.wi {
     font-size: 17px;
     line-height: 25px;
     color: #FFFFFF;
-    margin-top: 25px;
 }
 
 @media only screen and (min-width: 930px) {
@@ -182,21 +188,20 @@ main {
 .header .title {
     display: inline-block;
     font-size: 21px;
-    line-height: 25px;
     color: #FFFFFF;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
 .main-block {
     font-size: 0;
     min-width: 1170px;
+    margin-bottom: 119px;
 }
 
 main .main-block .city-list li {
     display: inline-block;
     font-size: 22px;
-    line-height: 26px;
     color: #FFFFFF;
     opacity: 0.5;
     padding-top: 26px;
@@ -208,7 +213,7 @@ main .main-block .city-list li:hover {
     opacity: 1.0;
 }
 
-i.wi {
+.celcius .wi {
     font-size: 30px;
 }
 
@@ -303,7 +308,6 @@ i.wi {
 .celcius {
     margin-top: 19px;
     font-size: 22px;
-    line-height: 26px;
 }
 
 
@@ -312,6 +316,5 @@ i.wi {
     line-height: 19px;
     color: #FFFFFF;
     margin-top: 35px;
-    margin-bottom: 119px;
 }
 }
