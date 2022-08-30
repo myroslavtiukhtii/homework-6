@@ -1,42 +1,232 @@
+/*Reviewer*/
+
 * {
     transition: all .1s ease-in;
     box-sizing: border-box;
+    line-height: 1;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 main {
     background-color: #2B81AC;
+    border: 5px solid #0e75a8;
     min-height: 100vh;
-    border: 25px solid #0e75a8;
 }
 
 .header .title {
     display: inline-block;
     font-family: 'Lucida Sans Unicode';
-    font-size: 21px;
-    line-height: 25px;
+    font-size: 18px;
     color: #FFFFFF;
-    margin: 60px 1042px 35px 135px;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 35px;
 }
-
 
 .main-block {
     font-size: 0;
-    margin: 35px 135px 35px 135px;
-    width: 1170px;
     position: relative;
-    width: auto;
 }
 
-
+.city-list {
+    margin-bottom: 25px;
+}
 
 main .main-block .city-list li {
     display: inline-block;
     font-family: 'Lucida Sans Unicode';
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 14px;
     color: #FFFFFF;
     opacity: 0.5;
-    padding-top: 26px;
+    cursor: pointer;
+    min-height: 100px;
+    vertical-align: middle;
+}
+
+.city-list li {
+    padding: 5px;
+}
+
+
+main .main-block .city-list li:hover {
+    opacity: 1.0;
+}
+
+.celcius span {
+    margin-right: 5px;
+}
+
+i.wi {
+    font-size: 15px;
+}
+
+.lisbon {
+    width: 50%;
+    min-height: 80px;
+    background-color: #3399CC;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.paris {
+    width: 25%;
+    min-height: 80px;
+    background-color: #33CCCC;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.belgrade {
+    width: 25%;
+    min-height: 80px;
+    background-color: #996699;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.venice {
+    width: 25%;
+    min-height: 80px;
+    background-color: #C24747;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.tel-avive {
+    width: 25%;
+    min-height: 80px;
+    background-color: #E2674A;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.cair {
+    width: 25%;
+    min-height: 80px;
+    background-color: #FFCC66;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.new-york {
+    width: 25%;
+    min-height: 80px;
+    background-color: #99CC99;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.new-delhi {
+    width: 25%;
+    min-height: 80px;
+    background-color: #669999;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.francisco {
+    width: 50%;
+    min-height: 80px;
+    background-color: #CC6699;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.tokyo {
+    width: 25%;
+    min-height: 80px;
+    background-color: #339966;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.sydney {
+    width: 100%;
+    min-height: 80px;
+    background-color: #666699;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.celcius {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 13px;
+}
+
+.celcius .wi {
+    font-size: 20px;
+}
+
+
+.article {
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 370px) {
+
+    main .main-block .city-list li {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .celcius {
+        font-size: 10px;
+    }
+
+    .celcius .wi {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 930px) {
+    /*Reviewer*/
+
+section {
+    padding-top: 45px;
+    padding-bottom: 119px;
+}
+
+.container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+main {
+    border: 25px solid #0e75a8;
+}
+
+.header .title {
+    display: inline-block;
+    font-size: 21px;
+    color: #FFFFFF;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.main-block {
+    font-size: 0;
+    margin-bottom: 37px;
+}
+
+.city-list {
+    margin-bottom: 0;
+}
+
+main .main-block .city-list li {
+    display: inline-block;
+    font-size: 22px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding: 26px;
     cursor: pointer;
 }
 
@@ -45,7 +235,7 @@ main .main-block .city-list li:hover {
     opacity: 1.0;
 }
 
-i.wi {
+.celcius .wi {
     font-size: 30px;
 }
 
@@ -140,13 +330,13 @@ i.wi {
 .celcius {
     margin-top: 19px;
     font-size: 22px;
-    line-height: 26px;
 }
 
 
-.footer {
+.article {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    margin: 0 700px 119px 137px;
+    margin-top: 0;
+}
 }
