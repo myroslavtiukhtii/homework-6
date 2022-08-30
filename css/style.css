@@ -31,7 +31,6 @@ main {
 .main-block {
     font-size: 0;
     position: relative;
-    width: auto;
 }
 
 .city-list {
@@ -42,15 +41,15 @@ main .main-block .city-list li {
     display: inline-block;
     font-family: 'Lucida Sans Unicode';
     font-size: 14px;
-    line-height: 13px;
     color: #FFFFFF;
     opacity: 0.5;
     cursor: pointer;
     min-height: 100px;
+    vertical-align: middle;
 }
 
 .city-list li {
-    padding-top: 25px;
+    padding: 5px;
 }
 
 
@@ -171,17 +170,37 @@ i.wi {
     color: #FFFFFF;
 }
 
+@media only screen and (max-width: 370px) {
+
+    main .main-block .city-list li {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .celcius {
+        font-size: 10px;
+    }
+
+    .celcius .wi {
+        font-size: 10px;
+    }
+}
+
 @media only screen and (min-width: 930px) {
     /*Reviewer*/
 
+section {
+    padding-top: 45px;
+    padding-bottom: 119px;
+}
+
 .container {
-        max-width: 1440px;
+        max-width: 1170px;
         margin: 0 auto;
-        padding: 0 135px;
+        padding: 0 15px;
     }
 
 main {
-    background-color: #2B81AC;
     border: 25px solid #0e75a8;
 }
 
@@ -189,14 +208,17 @@ main {
     display: inline-block;
     font-size: 21px;
     color: #FFFFFF;
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .main-block {
     font-size: 0;
-    min-width: 1170px;
-    margin-bottom: 119px;
+    margin-bottom: 37px;
+}
+
+.city-list {
+    margin-bottom: 0;
 }
 
 main .main-block .city-list li {
@@ -204,7 +226,7 @@ main .main-block .city-list li {
     font-size: 22px;
     color: #FFFFFF;
     opacity: 0.5;
-    padding-top: 26px;
+    padding: 26px;
     cursor: pointer;
 }
 
@@ -315,6 +337,6 @@ main .main-block .city-list li:hover {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    margin-top: 35px;
+    margin-top: 0;
 }
 }
